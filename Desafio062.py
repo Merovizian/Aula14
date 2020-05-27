@@ -4,18 +4,18 @@ termos = int(input("Informe a quantidade de termos: "))
 primeiro = int(input("Informe o primeiro termo: "))
 lista = ''
 
-lista += str(primeiro) + ','
 
-while termos > 0:
-    primeiro += razao
+while termos != 0:
     termos -= 1
-    if termos > 1:
+    if termos >= 1:
         lista += str(primeiro) + ','
     else:
         lista += str(primeiro) + ','
         print(lista[:len(lista) - 1])
         termos = int(input("Deseja colocar mais quantos termos (0 = nenhum): "))
-        termos +=1
+
+    primeiro += razao
+
 
 
 print(lista[:len(lista)-1])

@@ -7,7 +7,4 @@ print(primeiro,end=',')
 while termos > 1:
     primeiro += razao
     termos -= 1
-    if termos > 1:
-        print(f"{primeiro}", end=',')
-    else:
-        print(f"{primeiro}")
+    print(f"{primeiro}," if termos > 1 else f"{primeiro}",end = '')

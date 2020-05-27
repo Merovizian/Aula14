@@ -6,8 +6,7 @@ print (f"{numero}! = ",end = '')
 while n < numero:
     print(f"{numero-n}",end="")
     n += 1
-    if n < numero:
-        print("x",end='')
+    print(f"x" if n < numero else "",end = '')
     soma *= n
 
 
